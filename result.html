@@ -1,0 +1,8 @@
+<!doctype html>
+<title>Faculty Meeting Plan</title>
+<h2>Faculty Meeting Plan</h2>
+<pre>{{ plan }}</pre>
+<form action="/download" method="post">
+  <input type="hidden" name="plan" value="{{ plan }}">
+  <button type="submit">Download as PDF</button>
+</form>

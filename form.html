@@ -1,0 +1,10 @@
+<!doctype html>
+<title>Faculty Meeting Planner</title>
+<h2>Faculty Meeting Planning Questionnaire</h2>
+<form method="post">
+  {% for i, question in enumerate(questions) %}
+    <p><label>{{ question }}</label><br>
+    <textarea name="q{{ i }}" rows="3" cols="80" required></textarea></p>
+  {% endfor %}
+  <p><input type="submit" value="Generate Plan"></p>
+</form>
